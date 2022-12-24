@@ -11,11 +11,14 @@ let prof = [
 ]
 
 function addNewUser() {
-    count++;
     var newusername = document.getElementById("newUserName").value;
     var newuserprof = document.getElementById("newUserProf").value;
     var newuserage = document.getElementById("newUserAge").value;
-
+    if(newusername == '' || newuserprof == '' || newuserage == '') {
+        alert("Please enter all details");
+        return false;
+    }
+    count++;
     var obj = {
         id: count,
         name: newusername,
