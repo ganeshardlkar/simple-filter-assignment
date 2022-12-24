@@ -15,7 +15,7 @@ function addNewUser() {
     var newuserprof = document.getElementById("newUserProf").value;
     var newuserage = document.getElementById("newUserAge").value;
     if(newusername == '' || newuserprof == '' || newuserage == '') {
-        console.log("Please enter all details");
+        alert("Please enter all details");
         return false;
     }
     count++;
